@@ -46,11 +46,17 @@ def menu():
     elif opc == 3:
         opc2 = msg.opciones_tipo_c()
         if opc2 == 1:
-            pass
+            retorno = C.euler()
+            for a in retorno:
+                print(a)
         elif opc2 == 2:
-            pass
+            retorno = C.euler_mejorado()
+            for a in retorno:
+                print(a)
         else:
-            pass
+            retorno = C.runge_kutta()
+            for a in retorno:
+                print(a)
 
 
 if __name__ == '__main__':
