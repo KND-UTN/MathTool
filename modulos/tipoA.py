@@ -1,4 +1,6 @@
 from sympy import *
+import numpy as np
+import pandas as pd
 
 
 def euler():
@@ -29,6 +31,8 @@ def euler():
         c1 = c4
         c2 = c5
 
+    m = np.array(matriz_solucion).transpose()
+    matriz_solucion = pd.DataFrame({'xm': m[0], 'ym': m[1], 'f(xm, ym)': m[2], 'x(m+1)': m[3], 'y(m+1)': m[4]})
     return matriz_solucion
 
 
@@ -64,6 +68,9 @@ def euler_mejorado():
         c1 = c4
         c2 = c7
 
+    m = np.array(matriz_solucion).transpose()
+    matriz_solucion = pd.DataFrame({'xm': m[0], 'ym': m[1], 'f(xm, ym)': m[2], 'x(m+1)': m[3],
+                                    'y(m+1) e': m[4], 'f(x(m+1), y(m+1)) e': m[4], 'y(m+1)': m[4]})
     return matriz_solucion
 
 
@@ -111,4 +118,8 @@ def runge_kutta():
         c1 = c10
         c2 = c13
 
+    m = np.array(matriz_solucion).transpose()
+    matriz_solucion = pd.DataFrame({'xm': m[0], 'ym': m[1], 'k1': m[2], 'xm + h/2': m[3], 'ym + k1 * (h/2)': m[4],
+                                    'k2': m[5], 'xm+h/2': m[6], 'ym + k2 * (h/2)': m[7], 'k3': m[8], 'x(m+1)': m[9],
+                                    'ym + h * k3': m[10], 'k4': m[11], 'y(m+1)': m[12]})
     return matriz_solucion

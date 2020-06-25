@@ -1,4 +1,7 @@
 from sympy import *
+import numpy as np
+import pandas as pd
+
 
 def euler():
     x = Symbol('x')
@@ -37,7 +40,11 @@ def euler():
         c2 = c7
         c3 = c8
 
+    m = np.array(matriz_solucion).transpose()
+    matriz_solucion = pd.DataFrame({'xm': m[0], 'ym': m[1], 'zm': m[2], 'f(xm, ym, zm)': m[3], 'g(xm, ym, zm)': m[4],
+                                    'x(m+1)': m[5], 'y(m+1)': m[6], 'z(m+1)': m[7]})
     return matriz_solucion
+
 
 def euler_mejorado():
     x = Symbol('x')
@@ -84,6 +91,10 @@ def euler_mejorado():
         c2 = c11
         c3 = c12
 
+    m = np.array(matriz_solucion).transpose()
+    matriz_solucion = pd.DataFrame({'xm': m[0], 'ym': m[1], 'zm': m[2], 'f(xm, ym, zm)': m[3], 'g(xm, ym, zm)': m[4],
+                                    'x(m+1) *1': m[5], 'ym + h * f(xm, ym, zm) *2': m[6], 'zm + h * g(xm, ym, zm) *3': m[7],
+                                    'f(1, 2, 3)': m[8], 'g(1, 2, 3)': m[9], 'y(m+1)': m[10], 'z(m+1)': m[11]})
     return matriz_solucion
 
 def runge_kutta():
@@ -145,13 +156,19 @@ def runge_kutta():
             c21 = ''
             c22 = ''
 
-
         fila_temporal = [c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15, c16, c17, c18, c19, c20, c21, c22]
         matriz_solucion.append(fila_temporal)
         c1 = c16
         c2 = c21
         c3 = c22
 
+    m = np.array(matriz_solucion).transpose()
+    matriz_solucion = pd.DataFrame({'xm': m[0], 'ym': m[1], 'zm': m[2], 'k1': m[3],
+                                    'l1': m[4], 'xm + (h/2)': m[5], 'ym + k1 * (h/2)': m[6], 'zm + l1 * (h/2)': m[7],
+                                    'k2': m[8], 'l2': m[9], 'xm+(h/2)': m[10], 'ym + k2 * (h/2)': m[11],
+                                    'zm + l2 * (h/2)': m[12], 'k3': m[13], 'l3': m[14], 'x(m+1)': m[15],
+                                    'ym + h * k3': m[16], 'zm + h*l3': m[17], 'k4': m[18], 'l4': m[19],
+                                    'y(m+1)': m[20], 'z(m+1)': m[21]})
     return matriz_solucion
 
 
