@@ -70,7 +70,7 @@ def euler_mejorado():
 
     m = np.array(matriz_solucion).transpose()
     matriz_solucion = pd.DataFrame({'xm': m[0], 'ym': m[1], 'f(xm, ym)': m[2], 'x(m+1)': m[3],
-                                    'y(m+1) e': m[4], 'f(x(m+1), y(m+1)) e': m[4], 'y(m+1)': m[4]})
+                                    'y(m+1) e': m[4], 'f(x(m+1), y(m+1)) e': m[5], 'y(m+1)': m[6]})
     return matriz_solucion
 
 
