@@ -1,4 +1,4 @@
-# Nostradamus
+# MathTool
 Software especializado en 3 tareas matematicas:
 
  - Aproximación de Funciones mediante el metodo de Mínimos Cuadrados
