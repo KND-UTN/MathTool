@@ -1,4 +1,4 @@
-__author__ = 'Ignacio Pieve Roiger'
+__author__ = 'Leila Spini, Ignacio Pieve, Sofia Cibello, Juan Pablo Donalisio'
 __version__ = 0.1
 
 from sympy import *
