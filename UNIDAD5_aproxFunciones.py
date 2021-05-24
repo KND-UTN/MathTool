@@ -1,4 +1,6 @@
+__author__ = 'Leila Spini, Ignacio Pieve, Sofia Cibello, Juan Pablo Donalisio'
 __version__ = 2.0
+
 import pandas as pd
 import numpy as np
 from sympy import *
