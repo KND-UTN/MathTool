@@ -214,7 +214,7 @@ def generadorDocumento(ecs, matricessd, matricescd, soluciones, ecsresueltas, da
     for a in range(len(ecs)):
         p = document.add_paragraph()
         p.add_run('F' + str(a) + '(x) = ').bold = True
-        p.add_run(str(ecs[a])).italic = True
+        p.add_run(str(ecs[a]).replace("**", "^")).italic = True
 
     # ----- MUESTRA DE RESULTADOS -----
     c = 0
@@ -224,7 +224,7 @@ def generadorDocumento(ecs, matricessd, matricescd, soluciones, ecsresueltas, da
         document.add_heading('Función ' + str(c), level=0)
         p = document.add_paragraph()
         p.add_run('F' + str(c) + '(x) = ').bold = True
-        p.add_run(str(a)).italic = True
+        p.add_run(str(a).replace("**", "^")).italic = True
 
         document.add_paragraph()
         p = document.add_paragraph()
@@ -418,4 +418,4 @@ def mln(x):
 
 if __name__ == "__main__":
     menu()
-    #menuTest(3)
+    #menuTest(1)
