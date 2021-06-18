@@ -137,7 +137,7 @@ def mostrador(ecs, matricessd, matricescd, soluciones, ecsresueltas, datos, desv
     print('')
     print('Ecuaciones planteadas:')
     for a in ecs:
-        print('F(x) = ' + str(a).replace("**", "^"))
+        print('F(x) = ' + str(a).replace("**", "^").replace('log', 'ln'))
 
     c = 0
     for a in ecs:
@@ -213,8 +213,8 @@ def generadorDocumento(ecs, matricessd, matricescd, soluciones, ecsresueltas, da
     p.add_run("Ecuaciones planteadas:").bold = True
     for a in range(len(ecs)):
         p = document.add_paragraph()
-        p.add_run('F' + str(a) + '(x) = ').bold = True
-        p.add_run(str(ecs[a]).replace("**", "^")).italic = True
+        p.add_run('F' + str(a + 1) + '(x) = ').bold = True
+        p.add_run(str(ecs[a]).replace("**", "^").replace('log', 'ln')).italic = True
 
     # ----- MUESTRA DE RESULTADOS -----
     c = 0
@@ -224,7 +224,7 @@ def generadorDocumento(ecs, matricessd, matricescd, soluciones, ecsresueltas, da
         document.add_heading('Función ' + str(c), level=0)
         p = document.add_paragraph()
         p.add_run('F' + str(c) + '(x) = ').bold = True
-        p.add_run(str(a).replace("**", "^")).italic = True
+        p.add_run(str(a).replace("**", "^").replace('log', 'ln')).italic = True
 
         document.add_paragraph()
         p = document.add_paragraph()
@@ -240,7 +240,7 @@ def generadorDocumento(ecs, matricessd, matricescd, soluciones, ecsresueltas, da
         for fila in range(len(temp)):
             row_cells = table.add_row().cells
             for columna in range(len(temp.columns)):
-                texto = str(temp[temp.columns[columna]][fila]).replace("**", "^")
+                texto = str(temp[temp.columns[columna]][fila]).replace("**", "^").replace('log', 'ln')
                 if columna == len(temp.columns) - 2:
                     sombreado = parse_xml(r'<w:shd {} w:fill="D9D9D9"/>'.format(nsdecls('w')))
                     row_cells[columna]._tc.get_or_add_tcPr().append(sombreado)
@@ -286,7 +286,7 @@ def generadorDocumento(ecs, matricessd, matricescd, soluciones, ecsresueltas, da
         document.add_paragraph()
         p = document.add_paragraph()
         p.add_run("Ecuacion final: ").bold = True
-        p.add_run(str(ecsresueltas[c - 1]).replace("**", "^"))
+        p.add_run(str(ecsresueltas[c - 1]).replace("**", "^").replace('log', 'ln'))
         p = document.add_paragraph()
         p.add_run("Desviacion: ").bold = True
         p.add_run(str(desv[c - 1]))
@@ -334,10 +334,10 @@ def generadorDocumento(ecs, matricessd, matricescd, soluciones, ecsresueltas, da
     p.add_run('Función ' + str(optima + 1) + ":").bold = True
     p = document.add_paragraph()
     p.add_run('F' + str(optima + 1) + "(x): ").bold = True
-    p.add_run(str(ecs[optima]).replace("**", "^"))
+    p.add_run(str(ecs[optima]).replace("**", "^").replace('log', 'ln'))
     p = document.add_paragraph()
     p.add_run('F' + str(optima + 1) + "(x): ").bold = True
-    p.add_run(str(ecsresueltas[optima]).replace("**", "^"))
+    p.add_run(str(ecsresueltas[optima]).replace("**", "^").replace('log', 'ln'))
     p = document.add_paragraph()
     p.add_run("Desviación: ").bold = True
     p.add_run(str(desv[optima]))
@@ -417,5 +417,5 @@ def mln(x):
     return np.log(x)
 
 if __name__ == "__main__":
-    menu()
-    #menuTest(1)
+    #menu()
+    menuTest(3)
