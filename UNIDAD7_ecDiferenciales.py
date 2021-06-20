@@ -1,5 +1,5 @@
-__author__ = 'Leila Spini, Ignacio Pieve, Sofia Cibello, Juan Pablo Donalisio'
-__version__ = 1.0
+__author__ = 'KND | Los Chicos del K1'
+__version__ = 1.1
 
 from sympy import *
 import modulos.mensajes as msg

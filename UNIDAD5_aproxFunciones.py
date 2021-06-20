@@ -1,4 +1,4 @@
-__author__ = 'Leila Spini, Ignacio Pieve, Sofia Cibello, Juan Pablo Donalisio'
+__author__ = 'KND | Los Chicos del K1'
 __version__ = 2.0
 
 from io import StringIO, BytesIO

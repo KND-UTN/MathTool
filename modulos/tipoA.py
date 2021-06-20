@@ -6,7 +6,7 @@ import pandas as pd
 def euler():
     x = Symbol('x')
     y = Symbol('y')
-    ec = eval(input('Ingrese la ecuacion de la derivada: '))
+    ec = eval(input('Ingrese la ecuacion de la derivada: ').replace('^', '**'))
     pasos = int(input('Ingrese la cantidad de pasos a realizar: '))
     xinicial = float(input('Ingrese el valor en X inicial: '))
     yinicial = float(input('Ingrese el valor en Y inicial: '))
@@ -39,7 +39,7 @@ def euler():
 def euler_mejorado():
     x = Symbol('x')
     y = Symbol('y')
-    ec = eval(input('Ingrese la ecuacion de la derivada: '))
+    ec = eval(input('Ingrese la ecuacion de la derivada: ').replace('^', '**'))
     pasos = int(input('Ingrese la cantidad de pasos a realizar: '))
     xinicial = float(input('Ingrese el valor en X inicial: '))
     yinicial = float(input('Ingrese el valor en Y inicial: '))
@@ -77,7 +77,7 @@ def euler_mejorado():
 def runge_kutta():
     x = Symbol('x')
     y = Symbol('y')
-    ec = eval(input('Ingrese la ecuacion de la derivada: '))
+    ec = eval(input('Ingrese la ecuacion de la derivada: ').replace('^', '**'))
     pasos = int(input('Ingrese la cantidad de pasos a realizar: '))
     xinicial = float(input('Ingrese el valor en X inicial: '))
     yinicial = float(input('Ingrese el valor en Y inicial: '))

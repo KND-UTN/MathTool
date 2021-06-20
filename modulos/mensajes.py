@@ -12,9 +12,9 @@ def asegurar_rango(min, max):
 
 def opciones_principales():
     msg = 'Seleccione que tipo de calculo desea efectuar\n' \
-          '1- Resolucion de una ecuacion diferencial ordinaria de primer orden con condiciones iniciales\n' \
-          '2- Resolucion de un sistema de ecuaciones diferenciales de primer orden con condiciones iniciales\n' \
-          '3- Resolucion de una ecuacion diferencial de orden superior con condiciones iniciales\n'
+          '1- Una Ec. Diferencial de Primer Orden\n' \
+          '2- Varias Ecs. Diferenciales de Primer Orden\n' \
+          '3- Una Ec. Diferencial de Orden Superior\n'
     print(msg)
     return asegurar_rango(1, 3)
 
