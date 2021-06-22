@@ -46,7 +46,7 @@ Supongamos que nos dan la siguiente tabla:
 | 4.5 |  12  |
 |  5  | 12.5 |
 
-Y también nos dan las siguientes funciones:
+Y también nos dan las siguientes funciones:  
 **f1(x)** = c1.x + c2  
 **f2(x)** = c1.x^2 + c2.x + c3  
 **f3(x)** = c1.e^x + c2  
