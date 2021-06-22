@@ -55,7 +55,7 @@ Y también nos dan las siguientes funciones:
 -----
 ***Desarrollo:***
 
-Vemos que en la tabla de valores, se tiene 7 columnas, por lo que:  
+Vemos que en la tabla de valores, se tiene 7 columnas, por lo que:    
 
 >***Cuantos valores desea ingresar?:*** `7`  
 
@@ -82,6 +82,7 @@ Nos dieron 4 funciones, por lo que:
 ***Ingrese la funcion 2:*** `c*(x^2)+c*x+c`  
 ***Ingrese la funcion 3:*** `c*(e^x)+c`  
 ***Ingrese la funcion 4:*** `c*ln(x+1)+c*x`  
+
 Y automáticamente se genera el archivo de salida ***`aproximacion.docx`***
 
 
