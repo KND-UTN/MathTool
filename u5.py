@@ -417,5 +417,5 @@ def mln(x):
     return np.log(x)
 
 if __name__ == "__main__":
-    #menu()
-    menuTest(3)
+    menu()
+    #menuTest(3)
