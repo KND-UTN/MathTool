@@ -60,13 +60,13 @@ Vemos que en la tabla de valores, se tiene 7 columnas, por lo que:
 >***Cuantos valores desea ingresar?:*** `7`
 
 Luego tenemos que ir colocando uno por uno los valores de cada columna, de la siguiente manera:
->***Ingrese el valor 0 en y:*** `0`
-***Ingrese el valor 1 en y:*** `2`
-***Ingrese el valor 2 en y:*** `3`
-***Ingrese el valor 3 en y:*** `5`
-***Ingrese el valor 4 en y:*** `8`
-***Ingrese el valor 5 en y:*** `12`
-***Ingrese el valor 6 en y:*** `12.5`
+>***Ingrese el valor 0 en y:*** `0`  
+***Ingrese el valor 1 en y:*** `2`  
+***Ingrese el valor 2 en y:*** `3`  
+***Ingrese el valor 3 en y:*** `5`  
+***Ingrese el valor 4 en y:*** `8`  
+***Ingrese el valor 5 en y:*** `12`  
+***Ingrese el valor 6 en y:*** `12.5`  
 ----------
 >***Ingrese el valor 0 en x:*** `0`
 ***Ingrese el valor 1 en x:*** `1`
