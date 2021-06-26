@@ -3,10 +3,15 @@ import numpy as np
 import pandas as pd
 
 
+ln = np.log
+sin = np.sin
+cos = np.cos
+e = np.exp(1)
+x = Symbol('x')
+y = Symbol('y')
+z = Symbol('z')
+
 def euler():
-    x = Symbol('x')
-    y = Symbol('y')
-    z = Symbol('z')
     ecz = eval(input('Ingrese la ecuacion derivada segunda de Y: ').replace('^', '**'))
     pasos = int(input('Ingrese la cantidad de pasos a realizar: '))
     xinicial = float(input('Ingrese el valor en X inicial: '))
@@ -47,9 +52,6 @@ def euler():
 
 
 def euler_mejorado():
-    x = Symbol('x')
-    y = Symbol('y')
-    z = Symbol('z')
     ecz = eval(input('Ingrese la ecuacion derivada segunda de Y: ').replace('^', '**'))
     pasos = int(input('Ingrese la cantidad de pasos a realizar: '))
     xinicial = float(input('Ingrese el valor en X inicial: '))
@@ -98,9 +100,6 @@ def euler_mejorado():
     return matriz_solucion
 
 def runge_kutta():
-    x = Symbol('x')
-    y = Symbol('y')
-    z = Symbol('z')
     ecz = eval(input('Ingrese la ecuacion derivada segunda de Y: ').replace('^', '**'))
     pasos = int(input('Ingrese la cantidad de pasos a realizar: '))
     xinicial = float(input('Ingrese el valor en X inicial: '))

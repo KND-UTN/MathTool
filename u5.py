@@ -411,7 +411,7 @@ def msin(x):
     return np.sin(x)
 
 def mcos(x):
-    return np.sin(x)
+    return np.cos(x)
 
 def mln(x):
     return np.log(x)

@@ -2,11 +2,15 @@ from sympy import *
 import numpy as np
 import pandas as pd
 
+ln = np.log
+sin = np.sin
+cos = np.cos
+e = np.exp(1)
+x = Symbol('x')
+y = Symbol('y')
+z = Symbol('z')
 
 def euler():
-    x = Symbol('x')
-    y = Symbol('y')
-    z = Symbol('z')
     ecy = eval(input('Ingrese la ecuacion derivada de y: ').replace('^', '**'))
     ecz = eval(input('Ingrese la ecuacion derivada de z: ').replace('^', '**'))
     pasos = int(input('Ingrese la cantidad de pasos a realizar: '))
@@ -47,9 +51,6 @@ def euler():
 
 
 def euler_mejorado():
-    x = Symbol('x')
-    y = Symbol('y')
-    z = Symbol('z')
     ecy = eval(input('Ingrese la ecuacion derivada de y: ').replace('^', '**'))
     ecz = eval(input('Ingrese la ecuacion derivada de z: ').replace('^', '**'))
     pasos = int(input('Ingrese la cantidad de pasos a realizar: '))
@@ -99,9 +100,6 @@ def euler_mejorado():
 
 
 def runge_kutta():
-    x = Symbol('x')
-    y = Symbol('y')
-    z = Symbol('z')
     ecy = eval(input('Ingrese la ecuacion derivada de y: ').replace('^', '**'))
     ecz = eval(input('Ingrese la ecuacion derivada de z: ').replace('^', '**'))
     pasos = int(input('Ingrese la cantidad de pasos a realizar: '))
