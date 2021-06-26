@@ -46,42 +46,43 @@ Supongamos que nos dan la siguiente tabla:
 | 4.5 |  12  |
 |  5  | 12.5 |
 
-Y también nos dan las siguientes funciones:
-**f1(x)** = c1.x + c2
-**f2(x)** = c1.x^2 + c2.x + c3
-**f3(x)** = c1.e^x + c2
-**f4(x)** = c1.ln(x+1) + c2.x
+Y también nos dan las siguientes funciones:  
+**f1(x)** = c1.x + c2  
+**f2(x)** = c1.x^2 + c2.x + c3  
+**f3(x)** = c1.e^x + c2  
+**f4(x)** = c1.ln(x+1) + c2.x  
 
 -----
 ***Desarrollo:***
 
-Vemos que en la tabla de valores, se tiene 7 columnas, por lo que:
+Vemos que en la tabla de valores, se tiene 7 columnas, por lo que:    
 
->***Cuantos valores desea ingresar?:*** `7`
+>***Cuantos valores desea ingresar?:*** `7`  
 
-Luego tenemos que ir colocando uno por uno los valores de cada columna, de la siguiente manera:
->***Ingrese el valor 0 en y:*** `0`
-***Ingrese el valor 1 en y:*** `2`
-***Ingrese el valor 2 en y:*** `3`
-***Ingrese el valor 3 en y:*** `5`
-***Ingrese el valor 4 en y:*** `8`
-***Ingrese el valor 5 en y:*** `12`
-***Ingrese el valor 6 en y:*** `12.5`
+Luego tenemos que ir colocando uno por uno los valores de cada columna, de la siguiente manera:  
+>***Ingrese el valor 0 en y:*** `0`  
+***Ingrese el valor 1 en y:*** `2`  
+***Ingrese el valor 2 en y:*** `3`  
+***Ingrese el valor 3 en y:*** `5`  
+***Ingrese el valor 4 en y:*** `8`  
+***Ingrese el valor 5 en y:*** `12`  
+***Ingrese el valor 6 en y:*** `12.5`  
 ----------
->***Ingrese el valor 0 en x:*** `0`
-***Ingrese el valor 1 en x:*** `1`
-***Ingrese el valor 2 en x:*** `1`
-***Ingrese el valor 3 en x:*** `2`
-***Ingrese el valor 4 en x:*** `3`
-***Ingrese el valor 5 en x:*** `4.5`
-***Ingrese el valor 6 en x:*** `5`
+>***Ingrese el valor 0 en x:*** `0`  
+***Ingrese el valor 1 en x:*** `1`  
+***Ingrese el valor 2 en x:*** `1`  
+***Ingrese el valor 3 en x:*** `2`  
+***Ingrese el valor 4 en x:*** `3`  
+***Ingrese el valor 5 en x:*** `4.5`  
+***Ingrese el valor 6 en x:*** `5`  
 
-Nos dieron 4 funciones, por lo que:
->***Cuantas funciones desea ingresar?:*** `4`
-***Ingrese la funcion 1:*** `c*x+c`
-***Ingrese la funcion 2:*** `c*(x^2)+c*x+c`
-***Ingrese la funcion 3:*** `c*(e^x)+c`
-***Ingrese la funcion 4:*** `c*ln(x+1)+c*x`
+Nos dieron 4 funciones, por lo que:  
+>***Cuantas funciones desea ingresar?:*** `4`  
+***Ingrese la funcion 1:*** `c*x+c`  
+***Ingrese la funcion 2:*** `c*(x^2)+c*x+c`  
+***Ingrese la funcion 3:*** `c*(e^x)+c`  
+***Ingrese la funcion 4:*** `c*ln(x+1)+c*x`  
+
 Y automáticamente se genera el archivo de salida ***`aproximacion.docx`***
 
 
