@@ -1,11 +1,12 @@
 from sympy import *
 import numpy as np
 import pandas as pd
+import sympy
 
-
-ln = np.log
-sin = np.sin
-cos = np.cos
+ln = sympy.log
+log = sympy.log
+sin = sympy.sin
+cos = sympy.cos
 e = np.exp(1)
 x = Symbol('x')
 y = Symbol('y')
