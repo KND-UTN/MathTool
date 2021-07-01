@@ -171,13 +171,3 @@ def runge_kutta():
                                     'y(m+1)': m[20], 'z(m+1)': m[21]})
     return matriz_solucion
 
-
-
-
-
-
-
-
-
-
-

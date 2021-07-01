@@ -6,6 +6,7 @@ import modulos.mensajes as msg
 import modulos.tipoA as A
 import modulos.tipoB as B
 import modulos.tipoC as C
+import modulos.tipoD as D
 import os
 import pandas as pd
 
@@ -45,6 +46,15 @@ def menu():
             retorno = C.euler_mejorado()
         else:
             retorno = C.runge_kutta()
+
+    elif opc == 4:
+        opc2 = msg.opciones_tipo_d()
+        if opc2 == 1:
+            retorno = D.euler()
+        elif opc2 == 2:
+            retorno = D.euler_mejorado()
+        else:
+            retorno = D.runge_kutta()
 
     print(retorno)
 
